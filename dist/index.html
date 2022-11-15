@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="images/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link href="output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body
+    class="font-montserrat h-[100vh] bg-cream flex flex-col justify-center gap-4"
+  >
+    <main class="p-4">
+      <div
+        class="rounded-lg max-w-xs lg:max-w-2xl mx-auto overflow-hidden lg:grid lg:grid-cols-2"
+      >
+        <img class="lg:hidden" src="images/image-product-mobile.jpg" />
+        <img class="hidden lg:block" src="images/image-product-desktop.jpg" />
+        <div class="bg-white p-6 lg:justify-center flex flex-col gap-4">
+          <span class="tracking-[6px] text-sm text-dark-grayish-blue uppercase"
+            >Perfume</span
+          >
+          <h1 class="text-3xl font-fraunces text-very-dark-blue-card">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p
+            class="text-sm lg:text-base font-medium text-dark-grayish-blue leading-5"
+          >
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="flex gap-4 items-center font-medium">
+            <span class="text-dark-cyan font-fraunces text-3xl lg:text-4xl"
+              >$149.99</span
+            >
+            <span class="text-dark-grayish-blue line-through text-sm"
+              >$169.999</span
+            >
+          </div>
+          <button
+            class="bg-dark-cyan transition-all duration-300 mt-2 hover:bg-dark-cyan-2 flex justify-center gap-3 items-center font-bold text-white rounded-lg py-3"
+          >
+            <img src="images/icon-cart.svg" />
+            <span>Add to Cart</span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="text-center flex flex-col text-sm">
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Challenge by Frontend Mentor.
+        </a>
+        <a
+          href="https://www.frontendmentor.io/profile/robertzinBOSS"
+          rel="noopener"
+          target="_blank"
+          >Coded by
+          <em class="cursor-pointer underline">Roberto Llontop</em>.</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
